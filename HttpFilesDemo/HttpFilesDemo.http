@@ -1,0 +1,21 @@
+﻿@HttpFilesDemo_HostAddress = https://localhost:7181
+
+GET {{HttpFilesDemo_HostAddress}}/products
+X-API-Key: demo
+
+###
+
+POST {{HttpFilesDemo_HostAddress}}/products
+Content-Type: application/json
+X-API-Key: demo
+
+{
+  "id": "1",
+  "name": "ProductTest"
+}
+
+###
+
+DELETE {{HttpFilesDemo_HostAddress}}/products?productId=1
+
+###
